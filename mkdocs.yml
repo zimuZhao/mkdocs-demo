@@ -1,0 +1,60 @@
+site_name: '基于mkdocs搭建文档平台'
+site_author: help-center
+# site_url: http://jinghailu.jd.com/help-center/
+# site_dir: ../dist/help-center
+
+# File Directory
+nav:
+- 简介: index.md
+- 示例:
+  - 附件: demo/file.md
+  - 图片: demo/image.md
+  - 表格: demo/table.md
+  - 视频: demo/video.md
+
+dev_addr: 127.0.0.1:8081
+theme:
+  name: material
+  language: 'zh'
+  favicon: 'assets/favicon.ico'
+  logo:
+    icon: ' '
+  palette:
+    primary: 'Light Blue'
+    accent: 'Light Blue'
+  feature:
+    tabs: false
+extra_css:
+- 'assets/css/custom.css'
+- 'assets/css/simpleLightbox.min.css'
+extra_javascript:
+- 'assets/js/jquery-3.2.1.min.js'
+- 'assets/js/simpleLightbox.min.js'
+- 'assets/js/custom.js'
+#extra:
+#  search:
+#    language: 'ja'
+markdown_extensions:
+- markdown.extensions.attr_list
+- admonition
+- codehilite:
+    guess_lang: false
+    linenums: false
+- toc:
+    permalink: true
+- footnotes
+- meta
+- def_list
+- pymdownx.arithmatex
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.details
+- pymdownx.inlinehilite
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences
+- pymdownx.tasklist
+- pymdownx.tilde

@@ -1,0 +1,109 @@
+/** scrollbar */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #f0f6ff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(179, 187, 195, 0.50);
+  border-radius: 5px;
+}
+
+/* Header */
+.md-header {
+  background-color: #000 !important;
+}
+
+.md-header-nav > .md-flex > .md-flex__cell {
+  vertical-align: middle;
+}
+
+.md-logo {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABZ0lEQVRYhe2VPS8EURSG37MfNkSxoUBCovAP6Egksq1SqJRaf0FHo/AXNFrJNhJZoSZBJ9GIEIliE18hKzwKd5JrMrM7y+xGMW83c88573POvTNXypSSgFlgD9gBhrplmgeWgTN+6gFYBfKdMs4Bi8CpZ/oEbIZgasBEmsZ9rrMrz+TWvet3MeuhaTSADaD0F+MysAbce4WvgZVw4QiAQJfAXLvGw8AW8OgVunD7XozJiQMA+AS2gYFWxqPO+NlLPgHmgVyL3GYAge6AhajkMWf84gWfA0skPNEJAQDwkyaBKvDhrVeBmSSmaQD4xgdAJaJwDpgCLE2AgssL9rViZrWY2kVJx5JugKqkXUmHZtZob0bR1IFiTydQimjiFdjn+z8w8psJWADgfAbNrB4HIOmtSR/vko4k9UqaTtK4mVmaAG3LzKzpN90NZQAZQAaQAWQAhdDzOFCOie3pBED4Muqq/sVllOkLchqmmwaKvQ4AAAAASUVORK5CYII=);
+}
+
+.md-search__input {
+  font-size: 1.35rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.11);
+  background-color: #262626;
+  border-radius: 4px;
+  color: #A1A1A1;
+}
+
+/* Sidebar */
+.md-sidebar .md-nav__title {
+  display: none;
+}
+
+.md-sidebar .md-nav__item {
+  font-size: 1.3rem;
+  color: #34495E;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.md-sidebar .md-nav {
+  line-height: 2;
+}
+
+.md-sidebar .md-nav__link:hover,
+.md-sidebar .md-nav__link--active {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+/* Container */
+.md-content .md-typeset h1,
+.md-content .md-typeset h2,
+.md-content .md-typeset h3 {
+  font-weight: 500;
+  color: #121A21;
+}
+
+.md-typeset p, .md-typeset ul,
+.md-typeset ol, .md-typeset blockquote {
+  font-size: 14px;
+  line-height: 24px;
+  color: #34495E;
+}
+
+.md-footer-meta {
+  display: none;
+}
+
+/* image - simpleLightbox */
+a.boxedThumb {
+  display: block;
+  padding: 4px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+}
+
+a.boxedThumb:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
